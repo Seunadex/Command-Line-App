@@ -5,8 +5,10 @@ const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const request = new XMLHttpRequest();
 
 // Prompt user to provide username
+// Start the prompt
 prompt.start();
-prompt.get('username', function(err, result){
+// Get a property from the user: username
+prompt.get('username', function(error, result){
 	let url = "https://api.github.com/users/" + result.username;
 
 	const sendRequest = (request) => {
