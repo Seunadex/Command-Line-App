@@ -1,6 +1,11 @@
 # Command-Line-App
 A Simple command line application that comsumes a public API (in this case GitHub and Crowdscores API ) using a HTTP Client library</br>
+
+## GitHub Data
 When the program is run , it prompt for username and displays the user data in JSON format.</br>
+
+## EPL Table.
+This displays the current league table.
 
 ## Denpendencies
 * XMLHTTPRequest.
