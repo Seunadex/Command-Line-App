@@ -19,7 +19,7 @@ const requestHandler = (request) =>{
       let league = result[0].leagueTable;
 
       console.log("\n");
-      console.log("\t\t" + "ENGLISH PREMIER LEAGUE TABLE 2016/2017" + "\t\t");
+      console.log("\t\t\t\t" + "ENGLISH PREMIER LEAGUE TABLE 2016/2017" + "\t\t");
       console.log("\n");
       for (let i of league) {
         // To avoid displaying impertinent data, only target objects with 'position' as property. These are the teams.
@@ -32,7 +32,7 @@ const requestHandler = (request) =>{
           let justifyPosition = 8 - String(i.position).length;
 
           console.log("   " + i.position + " ".repeat(justifyPosition)  + i.name + " ".repeat(justifyName)
-                      + "Games Played:      " + i.gamesPlayed + "      Points:      " + i.points);
+                      + "Games Played:      " + i.gamesPlayed + "       GD:      " + i.goalDiff + "      Points:      " + i.points);
           console.log('\n');
 
         }
